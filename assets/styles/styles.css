@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+:root {
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+    --white:hsl(0, 0%, 100%);
+    --green: hsl(75, 94%, 57%);
+}
+
+body {
+    background-color: var(--grey-900);
+    color:var(--white);
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    background-color: var(--grey-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+    width: 25vw;
+    border-radius: 10px;
+}
+
+.container img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.container h2 {
+    font-size: 1.8rem;
+    margin-bottom: .4rem;
+}
+
+.container h4 {
+    color: var(--green);
+    font-weight: 500;
+}
+
+.container p {
+    margin-block: 1rem;
+}
+
+.socials {
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.socials button {
+    padding: .8rem .4rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--grey-700);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.socials button:hover {
+    background-color: var(--green);
+}
+
+
+.attribution{
+    font-size: .8rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
